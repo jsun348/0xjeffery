@@ -1,13 +1,18 @@
 import React from 'react';
+import GeoMark from './GeoMark';
 
 const ProfileHeader = () => {
   return (
-    <div className="bg-gray-100 py-8">
-      <div className='container'>
-        <h1 className="text-4xl font-bold text-gray-700 mb-2">Jeffery Sun</h1>
-        <p className="text-xl text-gray-500">Probably not cool.</p>
+    <header className="flex items-start justify-between gap-4 pb-7 sm:gap-6">
+      <div>
+        <h1 className="text-4xl font-bold leading-none tracking-tight sm:text-6xl">
+          <span className="text-faint">0x</span>Jeffery
+        </h1>
+        <p className="mt-4 text-sm text-faint">probably not cool.</p>
       </div>
-    </div>
+
+      <GeoMark className="h-16 w-16 shrink-0 sm:h-24 sm:w-24" />
+    </header>
   );
 };
 

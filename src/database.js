@@ -38,7 +38,15 @@ export const books = [
 
 export const medias = [
     {
-        "title": "The Hallmarks of Aging", 
+        "title": "Predictive History",
+        "author": "Professor Jiang (Jiang Xueqin)",
+        "description": "99% glorious nonsense, 1% unmatched wisdom.",
+        "notes": null,
+        "link": "https://youtube.com/@PredictiveHistory",
+        "date": "2026-06",
+    },
+    {
+        "title": "The Hallmarks of Aging",
         "author": "Carlos López-Otín et al.",
         "description": "Landmark paper of Longevity research (basically how to live 200 years), quite dry but still readable.",
         "notes": "https://0xjeffery.notion.site/Reading-Notes-The-Hallmarks-of-Aging-258b4c20e07d4ab5b15a1a32779577cc",

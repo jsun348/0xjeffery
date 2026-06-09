@@ -1,40 +1,22 @@
-.App {
-  text-align: left;
+/* Small "+" registration marks at the corners of the content frame (decorative geometry) */
+.frame {
+  position: relative;
 }
-
-.container {
-  margin-left: 24px; /* Adjust this value as needed */
-  margin-right: 24px; /* Adjust this value as needed */
-  margin-top: 24px;
+.frame::before,
+.frame::after {
+  content: "+";
+  position: absolute;
+  font-family: inherit;
   font-size: 14px;
+  line-height: 1;
+  color: #9aa0a8;
+  pointer-events: none;
 }
-
-@media only screen and (max-width: 600px) {
-  .container {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.frame::before {
+  top: -7px;
+  left: -7px;
 }
-
-h2 {
-  color: #4a4a4a; /* Example: sets the text color */
-  font-size: 24px; /* Example: sets the font size */
-  margin: 10px 0; /* Adds margin around the heading */
-  font-weight: bold;
-}
-
-a {
-  color: #0077b5; /* LinkedIn blue color, or choose any color you prefer */
-}
-
-.disclaimer {
-  font-style: italic; /* Italicize to differentiate from main content */
-  font-size: 0.85em; /* Slightly smaller than the main text */
-  color: #6c757d; /* A lighter or muted color for subtlety */
-  line-height: 1.4; /* Adequate line spacing for readability */
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 18px;
+.frame::after {
+  bottom: -7px;
+  right: -7px;
 }

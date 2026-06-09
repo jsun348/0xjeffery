@@ -2,10 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-gray-700; /* Example Tailwind classes */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-mono antialiased;
+    /* gentle dot-grid "graph paper" geometry */
+    background-image: radial-gradient(rgba(45, 45, 49, 0.045) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: -1px -1px;
+  }
+
+  ::selection {
+    background: rgba(45, 45, 49, 0.85);
+    color: #f8f7f3;
+  }
+
+  code {
+    @apply font-mono text-sm;
+  }
 }
 
-code {
-  @apply font-mono text-sm; /* Example Tailwind classes for 'code' elements */
+@layer components {
+  /* minimalist underline link */
+  .ulink {
+    @apply text-ink no-underline transition-colors duration-150;
+    text-decoration: underline;
+    text-decoration-color: #cfccc3;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+  .ulink:hover {
+    text-decoration-color: #67655f;
+    @apply text-muted;
+  }
+
+  /* small bracketed chip / tag */
+  .chip {
+    @apply inline-flex items-center border border-line2 px-1.5 py-0.5 text-[11px] uppercase tracking-[0.12em] text-muted;
+  }
+}
+
+/* slim scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d2cfc4;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bcb8ab;
 }
