@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fafaf8"><meta name="generator" content="Astro v7.0.9"><title>How this blog works — 0xjeffery</title><meta name="description" content="Write markdown, get real URLs, working link previews, and a two-minute path to Substack. A working note to myself."><link rel="canonical" href="https://0xjeffery.com/posts/how-this-works/"><link rel="icon" href="/logo.png" type="image/png"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="0xjeffery — Writing on markets, AI, and tech." href="https://0xjeffery.com/rss.xml"><!-- Open Graph: what LinkedIn (and most everything else) reads. --><meta property="og:type" content="article"><meta property="og:url" content="https://0xjeffery.com/posts/how-this-works/"><meta property="og:title" content="How this blog works"><meta property="og:description" content="Write markdown, get real URLs, working link previews, and a two-minute path to Substack. A working note to myself."><meta property="og:image" content="https://0xjeffery.com/og/how-this-works.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="How this blog works"><meta property="og:site_name" content="0xjeffery"><meta property="og:locale" content="en_US"><meta property="article:published_time" content="2026-07-14T00:00:00.000Z"><meta property="article:author" content="Jeffery Sun"><!-- Twitter/X card. `summary_large_image` is what renders the big preview. --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How this blog works"><meta name="twitter:description" content="Write markdown, get real URLs, working link previews, and a two-minute path to Substack. A working note to myself."><meta name="twitter:image" content="https://0xjeffery.com/og/how-this-works.png"><meta name="twitter:image:alt" content="How this blog works"><meta name="twitter:creator" content="@0xjeffery"><meta name="twitter:site" content="@0xjeffery"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/BaseLayout.CXotwUak.css"></head><body><div class="animate-fade-up min-h-screen overflow-x-hidden"><div class="mx-auto max-w-[74rem] px-5 py-10 sm:px-8 sm:py-12"><div class="frame border-line relative px-1 sm:border-x sm:px-8 lg:px-10"><main class="py-2"><a href="/" class="ulink text-muted font-mono text-xs tracking-[0.18em] uppercase">← index</a><article class="mt-10"><header class="border-line border-b pb-7"><h1 class="text-ink font-mono text-2xl leading-tight font-bold tracking-tight sm:text-[1.75rem]">How this blog works</h1><p class="text-muted font-serif mt-4 max-w-[60ch] text-lg leading-relaxed">Write markdown, get real URLs, working link previews, and a two-minute path to Substack. A working note to myself.</p></header><!--
+      Three columns on wide screens: metadata + contents in the left margin, prose at a
+      fixed measure in the middle, and an empty right column that <Side> notes float into.
+      Below `lg` it all collapses to a single column.
+    --><div class="mt-10 lg:grid lg:grid-cols-[11rem_minmax(0,64ch)_11rem] lg:justify-center lg:gap-10"><aside class="border-line mb-8 border-b pb-6 font-mono text-xs lg:mb-0 lg:border-0 lg:pb-0"><div class="lg:sticky lg:top-10"><div class="text-faint"><time datetime="2026-07-14T00:00:00.000Z">Jul 14, 2026</time></div><div class="mt-3 flex flex-wrap gap-1.5"><span class="chip">meta</span></div><nav class="border-line mt-6 hidden border-t pt-5 lg:block" aria-label="Contents"><p class="text-faint mb-3 text-[10px] tracking-[0.18em] uppercase">contents</p><ol class="space-y-2"><li class="flex gap-2 leading-snug"><span class="text-faint tabular-nums">01</span><a href="#writing-a-post" class="ulink text-muted">Writing a post</a></li><li class="flex gap-2 leading-snug"><span class="text-faint tabular-nums">02</span><a href="#margin-notes" class="ulink text-muted">Margin notes</a></li><li class="flex gap-2 leading-snug"><span class="text-faint tabular-nums">03</span><a href="#why-the-link-previews-work-now" class="ulink text-muted">Why the link previews work now</a></li><li class="flex gap-2 leading-snug"><span class="text-faint tabular-nums">04</span><a href="#sharing" class="ulink text-muted">Sharing</a></li><li class="flex gap-2 leading-snug"><span class="text-faint tabular-nums">05</span><a href="#cross-posting-to-substack" class="ulink text-muted">Cross-posting to Substack</a></li></ol></nav></div></aside><!-- `data-article-body` is the exact subtree the "copy for substack" button lifts. --><div data-article-body class="prose"><p>This post exists to document the thing it’s written in, and to show what the typography
+actually looks like. Delete it whenever.</p>
+<h2 id="writing-a-post">Writing a post</h2>
+<p>Drop a file in <code>src/content/posts/</code>. The filename becomes the URL, so <code>energy-transition.md</code>
+publishes at <code>/posts/energy-transition/</code>. Every post needs a few lines of frontmatter:</p>
+<pre class="astro-code github-light" style="background-color:#fff;color:#24292e;overflow-x:auto;white-space:pre-wrap;word-wrap:break-word" tabindex="0" data-language="yaml"><code><span class="line"><span style="color:#6F42C1">---</span></span>
+<span class="line"><span style="color:#22863A">title</span><span style="color:#24292E">: </span><span style="color:#032F62">&#39;The title, shown on the page and in link previews&#39;</span></span>
+<span class="line"><span style="color:#22863A">description</span><span style="color:#24292E">: </span><span style="color:#032F62">&#39;One or two sentences. This is the grey text under the title in an X or LinkedIn preview.&#39;</span></span>
+<span class="line"><span style="color:#22863A">date</span><span style="color:#24292E">: </span><span style="color:#005CC5">2026-07-14</span></span>
+<span class="line"><span style="color:#22863A">tags</span><span style="color:#24292E">: [</span><span style="color:#032F62">&#39;optional&#39;</span><span style="color:#24292E">]</span></span>
+<span class="line"><span style="color:#6F42C1">---</span></span></code></pre>
+<p>Add <code>draft: true</code> and the post renders while you’re running the dev server but is excluded
+from the published site, the RSS feed, and the sitemap. That’s how you park something
+half-finished without it leaking.</p>
+<blockquote>
+<p>The <code>description</code> does double duty — it’s the standfirst on the page <em>and</em> the preview
+text every social platform shows. Write it like ad copy, not like a summary.</p>
+</blockquote>
+<h2 id="margin-notes">Margin notes</h2>
+<aside class="sidenote">Notes float out here on a wide screen, and fold back into the text column on a
+phone. They’re set in mono so they read as apparatus, not prose.</aside>
+<p>Save a file as <code>.mdx</code> instead of <code>.md</code> and you can use <code>&lt;Side&gt;…&lt;/Side&gt;</code> anywhere in the text
+to push a note into the margin — for a citation, a caveat, an aside that would otherwise
+break the paragraph’s spine. There’s one to the right of this sentence.</p>
+<p>Plain <code>.md</code> files still work exactly as before; you only need <code>.mdx</code> if you want components.</p>
+<h2 id="why-the-link-previews-work-now">Why the link previews work now</h2>
+<p>The old site was a single-page React app using <code>HashRouter</code>, which meant every article lived
+at a URL like <code>0xjeffery.com/#/notes-energy</code>. Crawlers throw away everything after the <code>#</code>,
+so X and LinkedIn only ever saw the homepage — and since a single-page app ships one empty
+HTML shell, there was nothing for them to read anyway. Every share looked identical.</p>
+<p>Now each post is pre-rendered to its own HTML file with its own Open Graph tags baked in.
+There’s no JavaScript to execute, so the crawlers just read them. Three things follow:</p>
+<ul>
+<li><strong>Real URLs.</strong> <code>/posts/how-this-works/</code> — no hash, shareable, linkable, indexable.</li>
+<li><strong>A preview card per post,</strong> generated at build time from the title and description, in
+the same two typefaces as this page.</li>
+<li><strong>An RSS feed</strong> at <code>/rss.xml</code>, carrying the full text of every post.</li>
+</ul>
+<h2 id="sharing">Sharing</h2>
+<aside class="sidenote">LinkedIn’s <a href="https://www.linkedin.com/post-inspector/">Post Inspector</a> forces a
+re-scrape. X has no equivalent anymore; its cache just expires on its own.</aside>
+<p>Every post ends with a row of buttons. <code>x</code> and <code>linkedin</code> open a pre-filled composer with the
+link in it — the preview card is rendered by <em>them</em>, pulled from this page’s tags.</p>
+<p>Two things learned the hard way. <strong>Previews cannot be tested locally</strong>: the crawler runs on
+X’s servers, so <code>localhost</code> means <em>its</em> machine, not yours. It has to be a public URL. And
+<strong>both platforms cache previews aggressively</strong> — publish, share, then fix a typo in the
+title, and the stale card can persist for days.</p>
+<p>Worth knowing separately: X’s algorithm demotes posts containing external links. That’s a
+reach problem, not a preview problem, and it applies to Substack links too.</p>
+<h2 id="cross-posting-to-substack">Cross-posting to Substack</h2>
+<p>Substack has no public write API and no ongoing RSS sync, so there’s no way to make this
+fully automatic. There is, however, a good manual path, and it’s about two minutes:</p>
+<ol>
+<li>Hit <strong><code>copy for substack</code></strong> at the bottom of the post. It lifts just the article body —
+no navigation, no footer, no share buttons — onto the clipboard as rich HTML, rewriting
+every link and image to an absolute URL so nothing breaks on their domain.</li>
+<li>Paste into a new Substack draft. Headings, bold, italics, links, lists, and blockquotes
+all survive, because Substack’s editor accepts rich text.</li>
+<li>Re-enter the title and subtitle (their editor keeps those separate from the body), and publish.</li>
+</ol>
+<p>Code blocks and footnotes are the two things that travel badly — Substack’s support for both
+is weak. For a prose post, the paste lands clean.</p>
+<p>For the <em>initial</em> migration, don’t do this by hand. Substack’s importer takes an RSS feed
+under Settings → Import, and <code>/rss.xml</code> carries the full body of every post, so the entire
+back catalogue lands as drafts in one shot. It’s a one-time tool, not a sync — but you only
+need it once.</p>
+<hr/>
+<p>The site is the canonical home; Substack is just the email pipe. Write once, here.</p></div></div></article><div class="border-line mt-14 border-t pt-5"><div class="flex flex-wrap items-center gap-x-4 gap-y-3"><span class="text-faint text-[11px] tracking-[0.18em] uppercase">share</span><a href="https://x.com/intent/post?text=How%20this%20blog%20works%20by%20%400xjeffery&amp;url=https%3A%2F%2F0xjeffery.com%2Fposts%2Fhow-this-works%2F" target="_blank" rel="noopener noreferrer" class="chip hover:border-ink hover:text-ink transition-colors">x</a><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2F0xjeffery.com%2Fposts%2Fhow-this-works%2F" target="_blank" rel="noopener noreferrer" class="chip hover:border-ink hover:text-ink transition-colors">linkedin</a><button type="button" data-copy-link="https://0xjeffery.com/posts/how-this-works/" class="chip hover:border-ink hover:text-ink cursor-pointer transition-colors">copy link</button><button type="button" data-copy-substack class="chip hover:border-ink hover:text-ink cursor-pointer transition-colors">copy for substack</button><span data-share-status class="text-faint text-[11px] opacity-0 transition-opacity" role="status" aria-live="polite"></span></div></div><script type="module">var e=document.querySelector(`[data-share-status]`),t;function n(n){e&&(e.textContent=n,e.style.opacity=`1`,clearTimeout(t),t=setTimeout(()=>e.style.opacity=`0`,2400))}document.querySelector(`[data-copy-link]`)?.addEventListener(`click`,async e=>{let t=e.currentTarget.dataset.copyLink;try{await navigator.clipboard.writeText(t),n(`link copied`)}catch{n(`copy failed — press ⌘C`)}}),document.querySelector(`[data-copy-substack]`)?.addEventListener(`click`,async()=>{let e=document.querySelector(`[data-article-body]`);if(!e)return;let t=e.cloneNode(!0);t.querySelectorAll(`a[href]`).forEach(e=>{e.setAttribute(`href`,new URL(e.getAttribute(`href`),location.href).toString())}),t.querySelectorAll(`img[src]`).forEach(e=>{e.setAttribute(`src`,new URL(e.getAttribute(`src`),location.href).toString()),e.removeAttribute(`srcset`),e.removeAttribute(`loading`)}),t.querySelectorAll(`[class]`).forEach(e=>e.removeAttribute(`class`)),t.querySelectorAll(`[id]`).forEach(e=>e.removeAttribute(`id`));let r=t.innerHTML,i=e.innerText;try{await navigator.clipboard.write([new ClipboardItem({"text/html":new Blob([r],{type:`text/html`}),"text/plain":new Blob([i],{type:`text/plain`})})]),n(`article copied — paste into Substack`)}catch{try{await navigator.clipboard.writeText(i),n(`copied as plain text (rich copy unsupported here)`)}catch{n(`copy failed — select the article and press ⌘C`)}}});</script></main><footer class="border-line text-faint mt-20 flex items-center justify-between border-t pt-5 font-mono text-xs"><span>© 2026 Jeffery Sun</span><a href="/rss.xml" class="ulink text-faint tracking-[0.15em]">rss</a></footer></div></div></div></body></html>

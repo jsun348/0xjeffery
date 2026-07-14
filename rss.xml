@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>0xjeffery</title><description>Writing on markets, AI, and tech.</description><link>https://0xjeffery.com/</link><language>en-us</language><item><title>How this blog works</title><link>https://0xjeffery.com/posts/how-this-works/</link><guid isPermaLink="true">https://0xjeffery.com/posts/how-this-works/</guid><description>Write markdown, get real URLs, working link previews, and a two-minute path to Substack. A working note to myself.</description><pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This post exists to document the thing it&apos;s written in, and to show what the typography
+actually looks like. Delete it whenever.&lt;/p&gt;
+&lt;h2&gt;Writing a post&lt;/h2&gt;
+&lt;p&gt;Drop a file in &lt;code&gt;src/content/posts/&lt;/code&gt;. The filename becomes the URL, so &lt;code&gt;energy-transition.md&lt;/code&gt;
+publishes at &lt;code&gt;/posts/energy-transition/&lt;/code&gt;. Every post needs a few lines of frontmatter:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+title: &apos;The title, shown on the page and in link previews&apos;
+description: &apos;One or two sentences. This is the grey text under the title in an X or LinkedIn preview.&apos;
+date: 2026-07-14
+tags: [&apos;optional&apos;]
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add &lt;code&gt;draft: true&lt;/code&gt; and the post renders while you&apos;re running the dev server but is excluded
+from the published site, the RSS feed, and the sitemap. That&apos;s how you park something
+half-finished without it leaking.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The &lt;code&gt;description&lt;/code&gt; does double duty — it&apos;s the standfirst on the page &lt;em&gt;and&lt;/em&gt; the preview
+text every social platform shows. Write it like ad copy, not like a summary.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Margin notes&lt;/h2&gt;
+&lt;p&gt;Notes float out here on a wide screen, and fold back into the text column on a
+phone. They&apos;re set in mono so they read as apparatus, not prose.&lt;/p&gt;
+&lt;p&gt;Save a file as &lt;code&gt;.mdx&lt;/code&gt; instead of &lt;code&gt;.md&lt;/code&gt; and you can use &lt;code&gt;…&lt;/code&gt; anywhere in the text
+to push a note into the margin — for a citation, a caveat, an aside that would otherwise
+break the paragraph&apos;s spine. There&apos;s one to the right of this sentence.&lt;/p&gt;
+&lt;p&gt;Plain &lt;code&gt;.md&lt;/code&gt; files still work exactly as before; you only need &lt;code&gt;.mdx&lt;/code&gt; if you want components.&lt;/p&gt;
+&lt;h2&gt;Why the link previews work now&lt;/h2&gt;
+&lt;p&gt;The old site was a single-page React app using &lt;code&gt;HashRouter&lt;/code&gt;, which meant every article lived
+at a URL like &lt;code&gt;0xjeffery.com/#/notes-energy&lt;/code&gt;. Crawlers throw away everything after the &lt;code&gt;#&lt;/code&gt;,
+so X and LinkedIn only ever saw the homepage — and since a single-page app ships one empty
+HTML shell, there was nothing for them to read anyway. Every share looked identical.&lt;/p&gt;
+&lt;p&gt;Now each post is pre-rendered to its own HTML file with its own Open Graph tags baked in.
+There&apos;s no JavaScript to execute, so the crawlers just read them. Three things follow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Real URLs.&lt;/strong&gt; &lt;code&gt;/posts/how-this-works/&lt;/code&gt; — no hash, shareable, linkable, indexable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A preview card per post,&lt;/strong&gt; generated at build time from the title and description, in
+the same two typefaces as this page.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;An RSS feed&lt;/strong&gt; at &lt;code&gt;/rss.xml&lt;/code&gt;, carrying the full text of every post.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Sharing&lt;/h2&gt;
+&lt;p&gt;LinkedIn&apos;s &lt;a href=&quot;https://www.linkedin.com/post-inspector/&quot;&gt;Post Inspector&lt;/a&gt; forces a
+re-scrape. X has no equivalent anymore; its cache just expires on its own.&lt;/p&gt;
+&lt;p&gt;Every post ends with a row of buttons. &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;linkedin&lt;/code&gt; open a pre-filled composer with the
+link in it — the preview card is rendered by &lt;em&gt;them&lt;/em&gt;, pulled from this page&apos;s tags.&lt;/p&gt;
+&lt;p&gt;Two things learned the hard way. &lt;strong&gt;Previews cannot be tested locally&lt;/strong&gt;: the crawler runs on
+X&apos;s servers, so &lt;code&gt;localhost&lt;/code&gt; means &lt;em&gt;its&lt;/em&gt; machine, not yours. It has to be a public URL. And
+&lt;strong&gt;both platforms cache previews aggressively&lt;/strong&gt; — publish, share, then fix a typo in the
+title, and the stale card can persist for days.&lt;/p&gt;
+&lt;p&gt;Worth knowing separately: X&apos;s algorithm demotes posts containing external links. That&apos;s a
+reach problem, not a preview problem, and it applies to Substack links too.&lt;/p&gt;
+&lt;h2&gt;Cross-posting to Substack&lt;/h2&gt;
+&lt;p&gt;Substack has no public write API and no ongoing RSS sync, so there&apos;s no way to make this
+fully automatic. There is, however, a good manual path, and it&apos;s about two minutes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Hit &lt;strong&gt;&lt;code&gt;copy for substack&lt;/code&gt;&lt;/strong&gt; at the bottom of the post. It lifts just the article body —
+no navigation, no footer, no share buttons — onto the clipboard as rich HTML, rewriting
+every link and image to an absolute URL so nothing breaks on their domain.&lt;/li&gt;
+&lt;li&gt;Paste into a new Substack draft. Headings, bold, italics, links, lists, and blockquotes
+all survive, because Substack&apos;s editor accepts rich text.&lt;/li&gt;
+&lt;li&gt;Re-enter the title and subtitle (their editor keeps those separate from the body), and publish.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Code blocks and footnotes are the two things that travel badly — Substack&apos;s support for both
+is weak. For a prose post, the paste lands clean.&lt;/p&gt;
+&lt;p&gt;For the &lt;em&gt;initial&lt;/em&gt; migration, don&apos;t do this by hand. Substack&apos;s importer takes an RSS feed
+under Settings → Import, and &lt;code&gt;/rss.xml&lt;/code&gt; carries the full body of every post, so the entire
+back catalogue lands as drafts in one shot. It&apos;s a one-time tool, not a sync — but you only
+need it once.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The site is the canonical home; Substack is just the email pipe. Write once, here.&lt;/p&gt;
+</content:encoded><category>meta</category></item></channel></rss>
