@@ -19,56 +19,20 @@
 &lt;p&gt;The monitoring list follows from the mechanism, in causal order: &lt;em&gt;(i)&lt;/em&gt; the capex second derivative — guidance revisions at the April/July/October prints, since the wedge lives on growth, not level; &lt;em&gt;(ii)&lt;/em&gt; depreciation-life convergence — each company that follows Amazon’s shortening converts deferred cost to current expense with no cash change (Microsoft’s two-thirds short-lived disclosure makes it the bellwether); &lt;em&gt;(iii)&lt;/em&gt; the OCF/capex crossings Epoch has dated (aggregate Q3 2026; Alphabet early 2027, Meta mid-2027, Microsoft late 2028) — each crossing forces the debt market, not the equity market, to underwrite the wedge; &lt;em&gt;(iv)&lt;/em&gt; bond spreads on the ~$570B of projected 2026 AI issuance — the accrual game ends when creditors reprice it; &lt;em&gt;(v)&lt;/em&gt; the mark-up line at Alphabet/Amazon, which turns from tailwind to headwind the first quarter private AI marks fall; and &lt;em&gt;(vi)&lt;/em&gt; impairment language — the first hyperscaler 10-Q that writes down a GPU vintage converts Definition C from analyst estimate to reported fact.&lt;/p&gt;
 &lt;h2&gt;Appendix: sources and assumptions&lt;/h2&gt;
 &lt;p&gt;Research commentary, not investment advice. Figures as retrieved July 2–8, 2026. The framework is deliberately reductive where reduction clarifies: all stated assumptions are in the exhibits so they can be attacked line by line.&lt;/p&gt;
-</content:encoded><category>markets</category><category>ai</category><category>accounting</category></item><item><title>The Practice Room: Music Theory Drills That Run in the Page</title><link>https://0xjeffery.com/posts/the-practice-room/</link><guid isPermaLink="true">https://0xjeffery.com/posts/the-practice-room/</guid><description>A page that is the exercise rather than an explanation of it. First drill: the note circle — count the semitones between two notes, or name the note a given distance away. More sections to follow.</description><pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Music theory is not knowledge, it is latency. Everyone who has spent an evening with a
-chord chart knows what a minor third is; almost nobody can say, without counting on their
-fingers, what sits a minor third above A♭. The gap between those two states is not
-understanding. It is repetition — and repetition wants a drill, not a paragraph.&lt;/p&gt;
-&lt;p&gt;So this page is the drill. It runs entirely in the browser, holds no account, keeps no score
-past the tab, and works on a phone with one thumb. It will grow a section at a time as I hit
-the next thing I am slow at; the note circle is the first.&lt;/p&gt;
+</content:encoded><category>markets</category><category>ai</category><category>accounting</category></item><item><title>The Practice Room: Music Theory Drills</title><link>https://0xjeffery.com/posts/the-practice-room/</link><guid isPermaLink="true">https://0xjeffery.com/posts/the-practice-room/</guid><description>A page that is the exercise rather than an explanation of it. First drill: the note circle — count the semitones between two notes, or name the note a given distance away.</description><pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Theory isn&apos;t knowledge, it&apos;s latency. Everyone knows what a minor third is; almost nobody can
+say what sits a minor third above A♭ without counting. That gap wants a drill, not a
+paragraph — so this page is the drill. It runs in the browser, keeps nothing, and works on a
+phone. A section at a time as I find the next thing I&apos;m slow at.&lt;/p&gt;
 &lt;h2&gt;The note circle&lt;/h2&gt;
-&lt;p&gt;Twelve pitch classes, evenly spaced, wrapping at the octave. Every interval question is the
-same question asked from one of two ends: the distance between two points, or the point a
-given distance away. Both directions are below — the tabs switch between them.&lt;/p&gt;
-&lt;p&gt;A few decisions worth stating, since they change what the drill teaches:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;It grades by pitch class, not by spelling.&lt;/strong&gt; Ask for the note seven semitones above A and
-the answer is E; F♭ is accepted, because it is the same key. That is a deliberate narrowing.
-Whether a pitch should be written G♯ or A♭ is a question about the key you are in and the
-line you are writing, and it deserves its own drill later. Conflating it with distance
-arithmetic just makes both slower to learn.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The interval is always read upwards from the first note.&lt;/strong&gt; &quot;A ↑ B♭&quot; is 1, not 11. Without
-that convention half the answers are ambiguous, and ambiguity in a speed drill teaches
-hesitation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Wrong answers stop the clock.&lt;/strong&gt; A correct answer rolls straight into the next question;
-a wrong one freezes, lights the arc on the circle, and waits for you. The point of seeing the
-arc is to attach a shape to the number — twelve is the whole face, six is straight across,
-seven is the one you will use most.&lt;/p&gt;
-&lt;p&gt;At a desk, the keyboard works: digits for the intervals, with &lt;code&gt;-&lt;/code&gt; and &lt;code&gt;=&lt;/code&gt; carrying 10 and 11
-where they sit on the number row; letters for the notes, with &lt;code&gt;-&lt;/code&gt; and &lt;code&gt;=&lt;/code&gt; again toggling flat
-and sharp before you name one.&lt;/p&gt;
-&lt;h2&gt;The accidental problem&lt;/h2&gt;
-&lt;p&gt;Getting ♯ and ♭ onto a phone is the whole interface question for the second drill, and it has
-no clean answer. A text field means summoning the keyboard, hunting for a symbol that is not
-on the primary plane, and losing a second per question — which defeats the exercise.&lt;/p&gt;
-&lt;p&gt;What is here instead: the accidental is a sticky modifier, not a character. Tap ♭ or ♯, then
-tap a letter, and the answer submits on the letter. Naturals need no modifier at all, so the
-common case is one tap and the worst case is two. The modifier clears itself after every
-answer, because a mode you can get stuck in silently is worse than an extra tap.&lt;/p&gt;
-&lt;p&gt;I do not think this is obviously right. The alternative worth trying is a twelve-key
-chromatic strip laid out like a keyboard octave — one tap always, at the cost of asking you
-to read a piano rather than a name. If the two-tap version starts to feel like the bottleneck
-rather than the recall, that is the version that replaces it.&lt;/p&gt;
-&lt;h2&gt;What comes next&lt;/h2&gt;
-&lt;p&gt;The list, roughly in the order I expect to need them:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Intervals by name&lt;/strong&gt; — major third, perfect fourth, tritone — mapped onto the semitone
-counts above, in both directions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Key signatures&lt;/strong&gt; — how many sharps or flats, and which ones, in what order.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Chord spelling&lt;/strong&gt; — triads and sevenths from a root, then inversions.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Spelling proper&lt;/strong&gt; — the G♯-or-A♭ question the first drill deliberately sets aside.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Each will be a section on this page rather than a post of its own. A practice room with the
-equipment in one place beats four rooms with one machine each.&lt;/p&gt;
+&lt;p&gt;Twelve pitch classes on a clock face. Same fact from either end: the distance between two
+notes, or the note a distance away. Both directions, up and down. Answers grade by pitch, so
+F♭ passes for E.&lt;/p&gt;
+&lt;p&gt;Tap ♭ or ♯ before a letter to spell an accidental — it clears itself after each answer. At a
+desk the keyboard works: digits for intervals, with &lt;code&gt;-&lt;/code&gt; and &lt;code&gt;=&lt;/code&gt; for 10 and 11; letters for
+notes.&lt;/p&gt;
+&lt;h2&gt;Next&lt;/h2&gt;
+&lt;p&gt;Intervals by name, key signatures, chord spelling. All of them sections here rather than
+posts of their own.&lt;/p&gt;
 </content:encoded><category>music</category><category>tools</category></item><item><title>How this blog works</title><link>https://0xjeffery.com/posts/how-this-works/</link><guid isPermaLink="true">https://0xjeffery.com/posts/how-this-works/</guid><description>Write markdown, get real URLs, working link previews, and a two-minute path to Substack. A working note to myself.</description><pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This post exists to document the thing it&apos;s written in, and to show what the typography
 actually looks like. Delete it whenever.&lt;/p&gt;
 &lt;h2&gt;Writing a post&lt;/h2&gt;
