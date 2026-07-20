@@ -19,21 +19,21 @@
 &lt;p&gt;The monitoring list follows from the mechanism, in causal order: &lt;em&gt;(i)&lt;/em&gt; the capex second derivative — guidance revisions at the April/July/October prints, since the wedge lives on growth, not level; &lt;em&gt;(ii)&lt;/em&gt; depreciation-life convergence — each company that follows Amazon’s shortening converts deferred cost to current expense with no cash change (Microsoft’s two-thirds short-lived disclosure makes it the bellwether); &lt;em&gt;(iii)&lt;/em&gt; the OCF/capex crossings Epoch has dated (aggregate Q3 2026; Alphabet early 2027, Meta mid-2027, Microsoft late 2028) — each crossing forces the debt market, not the equity market, to underwrite the wedge; &lt;em&gt;(iv)&lt;/em&gt; bond spreads on the ~$570B of projected 2026 AI issuance — the accrual game ends when creditors reprice it; &lt;em&gt;(v)&lt;/em&gt; the mark-up line at Alphabet/Amazon, which turns from tailwind to headwind the first quarter private AI marks fall; and &lt;em&gt;(vi)&lt;/em&gt; impairment language — the first hyperscaler 10-Q that writes down a GPU vintage converts Definition C from analyst estimate to reported fact.&lt;/p&gt;
 &lt;h2&gt;Appendix: sources and assumptions&lt;/h2&gt;
 &lt;p&gt;Research commentary, not investment advice. Figures as retrieved July 2–8, 2026. The framework is deliberately reductive where reduction clarifies: all stated assumptions are in the exhibits so they can be attacked line by line.&lt;/p&gt;
-</content:encoded><category>markets</category><category>ai</category><category>accounting</category></item><item><title>The Practice Room: Music Theory Drills</title><link>https://0xjeffery.com/posts/the-practice-room/</link><guid isPermaLink="true">https://0xjeffery.com/posts/the-practice-room/</guid><description>A page that is the exercise rather than an explanation of it. First drill: the note circle — count the semitones between two notes, or name the note a given distance away.</description><pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Theory isn&apos;t knowledge, it&apos;s latency. Everyone knows what a minor third is; almost nobody can
-say what sits a minor third above A♭ without counting. That gap wants a drill, not a
-paragraph — so this page is the drill. It runs in the browser, keeps nothing, and works on a
-phone. A section at a time as I find the next thing I&apos;m slow at.&lt;/p&gt;
-&lt;h2&gt;The note circle&lt;/h2&gt;
-&lt;p&gt;Twelve pitch classes on a clock face. Same fact from either end: the distance between two
-notes, or the note a distance away. Both directions, up and down. Answers grade by pitch, so
-F♭ passes for E.&lt;/p&gt;
-&lt;p&gt;Tap ♭ or ♯ before a letter to spell an accidental — it clears itself after each answer. At a
-desk the keyboard works: digits for intervals, with &lt;code&gt;-&lt;/code&gt; and &lt;code&gt;=&lt;/code&gt; for 10 and 11; letters for
-notes.&lt;/p&gt;
+</content:encoded><category>markets</category><category>ai</category><category>accounting</category></item><item><title>The Practice Room: Guitar Theory Drills</title><link>https://0xjeffery.com/posts/the-practice-room/</link><guid isPermaLink="true">https://0xjeffery.com/posts/the-practice-room/</guid><description>Theory is not knowledge, it is latency. Two drills for an acoustic player: the notes on strings 6 and 5, and the seven chords of a key by number.</description><pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Theory isn&apos;t knowledge, it&apos;s latency. Everyone knows the vi chord is minor; almost nobody can
+name it in E♭ before the bar has gone past. That gap wants a drill, not a paragraph — so this
+page is the drill. It runs in the browser, keeps nothing, and works on a phone.&lt;/p&gt;
+&lt;p&gt;Two to start, chosen because fluency in either changes what you can play tonight.&lt;/p&gt;
+&lt;h2&gt;Notes on the bass strings&lt;/h2&gt;
+&lt;p&gt;Strings 6 and 5 only, frets 0 to 12. These are the two strings barre chords are rooted on, so
+knowing them turns one shape into all twelve chords. The rest of the fretboard can wait.&lt;/p&gt;
+&lt;h2&gt;Numbers in a key&lt;/h2&gt;
+&lt;p&gt;The seven chords of a major key, by number, in both directions — chord to numeral and back.
+This is what lets someone call I–V–vi–IV in D and have your hands already moving, and it&apos;s the
+same fact that makes transposing and capo arithmetic possible later.&lt;/p&gt;
 &lt;h2&gt;Next&lt;/h2&gt;
-&lt;p&gt;Intervals by name, key signatures, chord spelling. All of them sections here rather than
-posts of their own.&lt;/p&gt;
-</content:encoded><category>music</category><category>tools</category></item><item><title>How this blog works</title><link>https://0xjeffery.com/posts/how-this-works/</link><guid isPermaLink="true">https://0xjeffery.com/posts/how-this-works/</guid><description>Write markdown, get real URLs, working link previews, and a two-minute path to Substack. A working note to myself.</description><pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This post exists to document the thing it&apos;s written in, and to show what the typography
+&lt;p&gt;Interval shapes from a root, key identification, transposition and capo. Sections here rather
+than posts of their own.&lt;/p&gt;
+</content:encoded><category>music</category><category>guitar</category><category>tools</category></item><item><title>How this blog works</title><link>https://0xjeffery.com/posts/how-this-works/</link><guid isPermaLink="true">https://0xjeffery.com/posts/how-this-works/</guid><description>Write markdown, get real URLs, working link previews, and a two-minute path to Substack. A working note to myself.</description><pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This post exists to document the thing it&apos;s written in, and to show what the typography
 actually looks like. Delete it whenever.&lt;/p&gt;
 &lt;h2&gt;Writing a post&lt;/h2&gt;
 &lt;p&gt;Drop a file in &lt;code&gt;src/content/posts/&lt;/code&gt;. The filename becomes the URL, so &lt;code&gt;energy-transition.md&lt;/code&gt;
